@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | SHUP School Management System</title>
+<link rel="icon" href="https://leowassociates.co.ke/school/images/shupschoologo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="login-wrap">
+  <div class="login-visual">
+    <div class="login-visual-top">
+      <img src="https://leowassociates.co.ke/school/images/shupschoologo.jpeg" alt="SHUP School logo">
+      <b>SHUP School</b>
+    </div>
+    <div class="login-visual-mid">
+      <div class="eyebrow">School Management System</div>
+      <h2>Plan, serve, and run your school from one dashboard.</h2>
+      <p>Sign in to manage attendance, academics, finance and communication for your institution.</p>
+    </div>
+    <div class="login-visual-bottom">
+      <div><b>120+</b><span>Schools</span></div>
+      <div><b>45k+</b><span>Students</span></div>
+      <div><b>24/7</b><span>Support</span></div>
+    </div>
+  </div>
+
+  <div class="login-panel">
+    <div class="login-box">
+
+      <!-- STEP 1: LOGIN -->
+      <div class="auth-step active" id="step-login">
+        <div class="eyebrow">Welcome back</div>
+        <h1>Log in</h1>
+        <p>Enter your credentials to access your dashboard.</p>
+        <form id="login-form">
+          <div class="field">
+            <input type="email" placeholder=" " required>
+            <label>Email Address</label>
+          </div>
+          <div class="field pass-field">
+            <input type="password" placeholder=" " required>
+            <label>Password</label>
+            <button type="button" class="pass-toggle" aria-label="Show password"><i class="fa-solid fa-eye"></i></button>
+          </div>
+          <div class="login-meta">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#" data-goto="step-forgot">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn btn-dark btn-block">Log In <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <div class="divider-text"><span>New to SHUP School?</span></div>
+        <a href="contact.html" class="btn btn-ghost btn-block" style="color:var(--ink);border-color:var(--line)">Request access</a>
+      </div>
+
+      <!-- STEP 2: FORGOT PASSWORD (send code) -->
+      <div class="auth-step" id="step-forgot">
+        <a href="#" class="back-link" data-goto="step-login"><i class="fa-solid fa-arrow-left"></i> Back to login</a>
+        <div class="eyebrow">Reset access</div>
+        <h1>Forgot password?</h1>
+        <p>Enter the email linked to your account and we'll send a verification code.</p>
+        <form id="send-code-form">
+          <div class="field">
+            <input type="email" placeholder=" " required>
+            <label>Email Address</label>
+          </div>
+          <button type="submit" class="btn btn-dark btn-block">Send Code <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+      <!-- STEP 3: VERIFY OTP -->
+      <div class="auth-step" id="step-verify">
+        <a href="#" class="back-link" data-goto="step-forgot"><i class="fa-solid fa-arrow-left"></i> Resend OTP</a>
+        <div class="eyebrow">Check your inbox</div>
+        <h1>Verify code</h1>
+        <p>Enter the 4-digit code we just sent to your email.</p>
+        <form id="verify-form">
+          <div class="otp-row">
+            <input type="text" inputmode="numeric" maxlength="1" required>
+            <input type="text" inputmode="numeric" maxlength="1" required>
+            <input type="text" inputmode="numeric" maxlength="1" required>
+            <input type="text" inputmode="numeric" maxlength="1" required>
+          </div>
+          <button type="submit" class="btn btn-dark btn-block">Verify Code <i class="fa-solid fa-check"></i></button>
+        </form>
+      </div>
+
+      <!-- STEP 4: RESET PASSWORD -->
+      <div class="auth-step" id="step-reset">
+        <a href="#" class="back-link" data-goto="step-login"><i class="fa-solid fa-arrow-left"></i> Back to login</a>
+        <div class="eyebrow">Almost done</div>
+        <h1>Change password</h1>
+        <p>Choose a new password for your account.</p>
+        <form id="reset-form">
+          <div class="mismatch-note" id="mismatch-note"><i class="fa-solid fa-triangle-exclamation"></i> New password and confirm password are not the same.</div>
+          <div class="field pass-field">
+            <input type="password" id="new-password" placeholder=" " required>
+            <label>New Password</label>
+            <button type="button" class="pass-toggle" aria-label="Show password"><i class="fa-solid fa-eye"></i></button>
+          </div>
+          <div class="field pass-field">
+            <input type="password" id="confirm-password" placeholder=" " required>
+            <label>Confirm Password</label>
+            <button type="button" class="pass-toggle" aria-label="Show password"><i class="fa-solid fa-eye"></i></button>
+          </div>
+          <button type="submit" class="btn btn-dark btn-block">Change Password <i class="fa-solid fa-check"></i></button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | SHUP School Management System</title>
+<link rel="icon" href="https://leowassociates.co.ke/school/images/shupschoologo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-brand">
+      <img src="https://leowassociates.co.ke/school/images/shupschoologo.jpeg" alt="SHUP School logo">
+      <div class="nav-brand-text"><b>SHUP School</b><span>Management System</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-ghost">Log In</a>
+      <a href="contact.html" class="btn btn-gold">Get Started</a>
+      <button class="nav-burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="crumb">Home <span>/</span> Contact Us</div>
+    <h1>Let's get your school set up.</h1>
+    <p>Have a question, feedback, or need support? Fill in the form and we'll get back to you as soon as possible.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container contact-wrap">
+    <div class="form-card reveal">
+      <div class="form-success" id="form-success"><i class="fa-solid fa-circle-check"></i> Message sent — we'll be in touch within one business day.</div>
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <input type="text" id="name" placeholder=" " required>
+          <label for="name">Full Name</label>
+          <span class="field-error-msg">Please enter your name.</span>
+        </div>
+        <div class="field">
+          <input type="email" id="email" placeholder=" " required>
+          <label for="email">Email Address</label>
+          <span class="field-error-msg">Please enter a valid email.</span>
+        </div>
+        <div class="field">
+          <input type="text" id="subject" placeholder=" " required>
+          <label for="subject">Subject</label>
+          <span class="field-error-msg">Please add a subject.</span>
+        </div>
+        <div class="field">
+          <textarea id="message" placeholder=" " required></textarea>
+          <label for="message">Message</label>
+          <span class="field-error-msg">Please write a message.</span>
+        </div>
+        <button type="submit" class="btn btn-dark btn-block">Send Message <i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+    </div>
+
+    <div class="reveal">
+      <div class="contact-info-card">
+        <div class="contact-info-row"><i class="fa-solid fa-location-dot"></i><div><b>Visit us</b><span>HighView Plaza, Kiambu Road, Second Floor S11, Nairobi</span></div></div>
+        <div class="contact-info-row"><i class="fa-solid fa-phone"></i><div><b>Call us</b><span><a href="tel:0728843553">0728 843 553</a></span></div></div>
+        <div class="contact-info-row"><i class="fa-solid fa-envelope"></i><div><b>Email us</b><span><a href="mailto:info@leowassociates.co.ke">info@leowassociates.co.ke</a></span></div></div>
+        <div class="contact-info-row"><i class="fa-solid fa-clock"></i><div><b>Office hours</b><span>Mon – Fri, 8:00am – 5:00pm EAT</span></div></div>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps?q=HighView%20Plaza%2C%20Kiambu%20Road%2C%20Nairobi&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to HighView Plaza, Kiambu Road, Nairobi"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--paper-dim)">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" style="justify-content:center">FAQ</div>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q">How long does onboarding take? <i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a"><p>Most schools are fully set up within a week — student and staff records can be imported from existing spreadsheets.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can parents access it without a smartphone? <i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a"><p>Yes — the parent portal works on any browser, and SMS notifications reach parents without data or a smartphone.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is our data secure? <i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a"><p>Student and financial records are access-controlled by role, so only authorised staff can view or edit sensitive information.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you offer training for staff? <i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a"><p>Yes — every onboarding includes hands-on training for teachers, bursars and administrators, drawing on our consulting background.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="https://leowassociates.co.ke/school/images/shupschoologo.jpeg" alt="SHUP School logo"><b>SHUP School</b></div>
+        <p style="max-width:280px">A product of Leowa Associates Limited — built from real institutional consulting experience across East Africa.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="login.html">Login</a></li></ul>
+      </div>
+      <div>
+        <h4>Modules</h4>
+        <ul><li><a href="index.html#features">Student Records</a></li><li><a href="index.html#features">Exams &amp; Grading</a></li><li><a href="index.html#features">Fee Management</a></li><li><a href="index.html#features">Parent Portal</a></li></ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <p style="color:rgba(248,245,238,.65);font-size:.88rem;margin-bottom:6px">HighView Plaza, Kiambu Road<br>Second Floor, S11, Nairobi</p>
+        <p style="color:rgba(248,245,238,.65);font-size:.88rem;margin-bottom:6px">Tel: 0728 843 553</p>
+        <p style="color:rgba(248,245,238,.65);font-size:.88rem;margin-bottom:6px">info@leowassociates.co.ke</p>
+        <div class="footer-clock" data-clock>—</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Leowa Associates Limited. All rights reserved.</span>
+      <span>Designed &amp; built during attachment</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
