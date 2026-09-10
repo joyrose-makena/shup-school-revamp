@@ -2,15 +2,15 @@
    SHUP School — Design Tokens
    ========================================================================== */
 :root{
-  --ink:            #101B33;   /* primary dark — header/footer/hero */
-  --ink-soft:       #1E3A5F;   /* secondary dark — gradients */
-  --gold:           #E8A33D;   /* primary accent — CTAs, stamps */
-  --gold-soft:      #F6D394;
-  --chalk:          #2F6F5E;   /* secondary accent — success/ticks */
-  --chalk-soft:     #DCEEE8;
-  --paper:          #F8F5EE;   /* light surface */
-  --paper-dim:      #EFEAE0;
-  --text:           #16213E;
+  --ink:            #06283E;   /* primary dark — header/footer/hero */
+  --ink-soft:       #0086D0;   /* brand blue */
+  --gold:           #64BCF4;   /* brand sky blue — CTAs, accents */
+  --gold-soft:      #BFE3FB;
+  --chalk:          #0B5E93;   /* secondary accent — success/ticks */
+  --chalk-soft:     #D7ECFA;
+  --paper:          #F1F8FC;   /* light surface */
+  --paper-dim:      #E3EEF6;
+  --text:           #312F3A;
   --text-mute:      #5B6478;
   --white:          #FFFFFF;
   --line:           rgba(16,27,51,0.10);
@@ -139,7 +139,7 @@ ul{ margin:0; padding:0; list-style:none; }
    Hero
    ========================================================================== */
 .hero{
-  position:relative; background:radial-gradient(120% 120% at 15% -10%, var(--ink-soft) 0%, var(--ink) 55%);
+  position:relative; background:linear-gradient(rgba(6,40,62,.82), rgba(6,40,62,.82)), url('../images/hero-bg.jpg') center/cover no-repeat;
   color:var(--paper); padding:170px 0 120px; overflow:hidden;
 }
 .hero::before{
@@ -299,14 +299,10 @@ ul{ margin:0; padding:0; list-style:none; }
    CTA band
    ========================================================================== */
 .cta-band{
-  background:linear-gradient(120deg, var(--ink) 0%, var(--ink-soft) 100%);
+   background:linear-gradient(rgba(6,40,62,.82), rgba(6,40,62,.82)), url('../images/cta-bg.jpg') center/cover no-repeat;
   border-radius:var(--radius-lg); padding:60px; color:var(--paper);
   display:flex; align-items:center; justify-content:space-between; gap:30px; flex-wrap:wrap;
   position:relative; overflow:hidden;
-}
-.cta-band::after{
-  content:''; position:absolute; right:-60px; top:-60px; width:220px; height:220px; border-radius:50%;
-  background:radial-gradient(circle, rgba(232,163,61,.35), transparent 70%);
 }
 .cta-band h2{ color:var(--paper); margin-bottom:6px; font-size:1.8rem; }
 .cta-band p{ color:rgba(248,245,238,.7); margin-bottom:0; }
@@ -345,7 +341,7 @@ ul{ margin:0; padding:0; list-style:none; }
    Inner page hero (About / Contact)
    ========================================================================== */
 .page-hero{
-  background:radial-gradient(120% 140% at 85% -20%, var(--ink-soft) 0%, var(--ink) 60%);
+  background:var(--ink);
   color:var(--paper); padding:150px 0 70px; text-align:left;
 }
 .page-hero h1{ color:var(--paper); font-size:clamp(2rem,4vw,2.8rem); }
@@ -409,7 +405,6 @@ ul{ margin:0; padding:0; list-style:none; }
 
 .contact-info-card{
   background:var(--ink); color:var(--paper); border-radius:var(--radius-lg); padding:36px; margin-bottom:22px;
-  background-image:radial-gradient(circle at 90% 10%, rgba(232,163,61,.25), transparent 55%);
 }
 .contact-info-row{ display:flex; gap:16px; align-items:flex-start; margin-bottom:20px; }
 .contact-info-row:last-child{ margin-bottom:0; }
@@ -436,7 +431,7 @@ ul{ margin:0; padding:0; list-style:none; }
 .login-wrap{ min-height:100vh; display:grid; grid-template-columns:1.05fr 1fr; }
 @media (max-width:920px){ .login-wrap{ grid-template-columns:1fr; } }
 .login-visual{
-  position:relative; background:radial-gradient(120% 120% at 20% 10%, var(--ink-soft), var(--ink) 65%);
+  position:relative; background:linear-gradient(rgba(6,40,62,.82), rgba(6,40,62,.82)), url('../images/login-bg.jpg') center/cover no-repeat;
   color:var(--paper); padding:60px; display:flex; flex-direction:column; justify-content:space-between; overflow:hidden;
 }
 @media (max-width:920px){ .login-visual{ min-height:280px; padding:40px; } }
